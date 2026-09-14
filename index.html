@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankly Web</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="p-3 text-bg-dark" data-bs-theme="dark">
+        <div class="container">
+    <div class="navbar navbar-expand-lg p-0 w-100 flex-wrap align-items-center justify-content-between justify-content-lg-start">
+
+        <!-- Logo -->
+        <a href="/" class="d-flex align-items-center me-3 text-white text-decoration-none">
+            <img src="" alt="logo">
+        </a>
+
+        <!-- Hamburger: only visible below lg -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#banklySidebar"
+                aria-controls="banklySidebar" aria-label="Open menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Sidebar on small screens, inline row on lg and up -->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="banklySidebar"
+             aria-labelledby="banklySidebarLabel" style="max-width: 85%;">
+
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="banklySidebarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body flex-column flex-lg-row flex-lg-grow-1 align-items-lg-center">
+
+                <!-- Navbar -->
+                <ul class="nav flex-column flex-lg-row me-lg-auto mb-3 mb-lg-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <!-- Buttons -->
+                <div class="d-grid gap-2 d-lg-block text-lg-end">
+                    <button type="button" class="btn btn-outline-light me-lg-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+</header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
